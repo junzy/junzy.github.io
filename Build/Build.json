@@ -1,6 +1,6 @@
 {
-"companyName": "DefaultCompany",
-"productName": "MyFirstGame",
+"companyName": "Junzy Dev",
+"productName": "DB Fighter",
 "dataUrl": "Build.data.unityweb",
 "wasmCodeUrl": "Build.wasm.code.unityweb",
 "wasmFrameworkUrl": "Build.wasm.framework.unityweb",
