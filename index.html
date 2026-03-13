@@ -4,10 +4,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Junaid Ahmed — Software Engineer at Klarna, Unity game developer, Stanford speaker, and founder of Respawnwear. Based in Berlin.">
+  <meta property="og:title" content="Junaid Ahmed — Software Engineer & Game Developer">
+  <meta property="og:description" content="Engineer at Klarna, Unity game dev, Stanford speaker, founder of Respawnwear. Check out my projects!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://junzy.github.io">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <title>Junaid's Homepage - Welcome!!!</title>
   <style>
     /* ===== RETRO EARLY 2000s STYLESHEET ===== */
     @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+    html { scroll-behavior: smooth; }
 
     body {
       background-color: #000011;
@@ -111,7 +120,7 @@
       border: 1px solid #00ffff;
       background: #001133;
     }
-    #navbar a:hover {
+    #navbar a:hover, #navbar a.active {
       background: #00ffff;
       color: #000011;
     }
@@ -121,6 +130,7 @@
       border: 2px ridge #ff00ff;
       margin-bottom: 10px;
       background: rgba(10, 0, 30, 0.9);
+      scroll-margin-top: 10px;
     }
 
     .section-title {
@@ -191,6 +201,8 @@
       background: linear-gradient(90deg, #ff00ff, #00ffff);
       height: 100%;
       display: block;
+      width: 0;
+      transition: width 1s ease-in-out;
     }
 
     /* ===== PROJECTS ===== */
@@ -295,6 +307,39 @@
       margin: 2px;
       color: #aaa;
       background: #222;
+    }
+
+    /* ===== RECOMMENDATION QUOTE ===== */
+    .quote-block {
+      border-left: 4px solid #ff00ff;
+      background: #0a001a;
+      padding: 12px 16px;
+      margin-top: 10px;
+      position: relative;
+    }
+    .quote-block::before {
+      content: '\201C';
+      font-size: 48px;
+      color: #ff00ff;
+      line-height: 1;
+      position: absolute;
+      top: 4px;
+      left: 8px;
+      opacity: 0.4;
+    }
+    .quote-text {
+      color: #ccddff;
+      font-size: 13px;
+      line-height: 1.7;
+      font-style: italic;
+      margin: 0 0 8px 0;
+      padding-left: 20px;
+    }
+    .quote-author {
+      color: #ff00ff;
+      font-size: 11px;
+      font-weight: bold;
+      padding-left: 20px;
     }
 
     /* ===== EXPERIENCE ===== */
@@ -511,6 +556,14 @@
         </p>
       </div>
 
+      <div class="quote-block">
+        <p class="quote-text">Junaid was great to work with at Klarna. He's a skilled developer
+        with strong communication and teamwork skills, and he consistently helped the team move
+        forward. During their time together at Klarna, the team faced lots of uncertainty, and
+        yet Junaid always delivered consistent results.</p>
+        <p class="quote-author">&#x2014; Colleague at Klarna &nbsp;|&nbsp; via LinkedIn</p>
+      </div>
+
     </div>
   </div>
 
@@ -529,47 +582,47 @@
         <tr>
           <td>Unity</td>
           <td class="cat-col">Game Engine</td>
-          <td><span class="skill-bar-bg"><span class="skill-bar-fill" style="width:85%"></span></span></td>
+          <td><span class="skill-bar-bg"><span class="skill-bar-fill" data-width="85%"></span></span></td>
         </tr>
         <tr>
           <td>C#</td>
           <td class="cat-col">Programming</td>
-          <td><span class="skill-bar-bg"><span class="skill-bar-fill" style="width:80%"></span></span></td>
+          <td><span class="skill-bar-bg"><span class="skill-bar-fill" data-width="80%"></span></span></td>
         </tr>
         <tr>
           <td>2D Game Design</td>
           <td class="cat-col">Game Dev</td>
-          <td><span class="skill-bar-bg"><span class="skill-bar-fill" style="width:75%"></span></span></td>
+          <td><span class="skill-bar-bg"><span class="skill-bar-fill" data-width="75%"></span></span></td>
         </tr>
         <tr>
           <td>WebGL / HTML5</td>
           <td class="cat-col">Web</td>
-          <td><span class="skill-bar-bg"><span class="skill-bar-fill" style="width:65%"></span></span></td>
+          <td><span class="skill-bar-bg"><span class="skill-bar-fill" data-width="65%"></span></span></td>
         </tr>
         <tr>
           <td>Git / GitHub</td>
           <td class="cat-col">Tools</td>
-          <td><span class="skill-bar-bg"><span class="skill-bar-fill" style="width:70%"></span></span></td>
+          <td><span class="skill-bar-bg"><span class="skill-bar-fill" data-width="70%"></span></span></td>
         </tr>
         <tr>
           <td>Game Physics</td>
           <td class="cat-col">Game Dev</td>
-          <td><span class="skill-bar-bg"><span class="skill-bar-fill" style="width:72%"></span></span></td>
+          <td><span class="skill-bar-bg"><span class="skill-bar-fill" data-width="72%"></span></span></td>
         </tr>
         <tr>
           <td>Digital Marketing</td>
           <td class="cat-col">Business</td>
-          <td><span class="skill-bar-bg"><span class="skill-bar-fill" style="width:70%"></span></span></td>
+          <td><span class="skill-bar-bg"><span class="skill-bar-fill" data-width="70%"></span></span></td>
         </tr>
         <tr>
           <td>Public Speaking</td>
           <td class="cat-col">Soft Skills</td>
-          <td><span class="skill-bar-bg"><span class="skill-bar-fill" style="width:68%"></span></span></td>
+          <td><span class="skill-bar-bg"><span class="skill-bar-fill" data-width="68%"></span></span></td>
         </tr>
         <tr>
           <td>E-commerce / DTC</td>
           <td class="cat-col">Business</td>
-          <td><span class="skill-bar-bg"><span class="skill-bar-fill" style="width:65%"></span></span></td>
+          <td><span class="skill-bar-bg"><span class="skill-bar-fill" data-width="65%"></span></span></td>
         </tr>
       </table>
     </div>
@@ -666,19 +719,48 @@
       <span class="badge">&#x26A1; Powered by GitHub Pages</span>
     </div>
     <div style="margin-top:6px; color:#444477; font-size:10px;">
-      &copy; 2026 Junaid &bull; All rights reserved &bull; No frames were harmed in the making of this site
+      &copy; 2026 Junaid Ahmed &bull; All rights reserved &bull; No frames were harmed in the making of this site
     </div>
   </div>
 
 </div>
 
 <script>
-  // Fake visitor counter that increments each visit
+  // Visitor counter
   var base = 1337;
   var stored = localStorage.getItem('visitCount');
   var count = stored ? parseInt(stored) + 1 : base;
   localStorage.setItem('visitCount', count);
   document.getElementById('visitor-count').textContent = String(count).padStart(6, '0');
+
+  // Skill bar animation — fill bars when skills section scrolls into view
+  var skillsSection = document.getElementById('skills');
+  var barsAnimated = false;
+  var barObserver = new IntersectionObserver(function(entries) {
+    if (entries[0].isIntersecting && !barsAnimated) {
+      barsAnimated = true;
+      document.querySelectorAll('.skill-bar-fill').forEach(function(bar) {
+        bar.style.width = bar.dataset.width;
+      });
+    }
+  }, { threshold: 0.2 });
+  barObserver.observe(skillsSection);
+
+  // Active nav highlight — tracks which section is in view
+  var navLinks = document.querySelectorAll('#navbar a[href^="#"]');
+  var sections = Array.from(navLinks).map(function(a) {
+    return document.querySelector(a.getAttribute('href'));
+  });
+  var navObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        navLinks.forEach(function(a) { a.classList.remove('active'); });
+        var active = document.querySelector('#navbar a[href="#' + entry.target.id + '"]');
+        if (active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-20% 0px -60% 0px' });
+  sections.forEach(function(s) { if (s) navObserver.observe(s); });
 </script>
 
 </body>
