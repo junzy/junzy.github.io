@@ -297,6 +297,37 @@
       background: #222;
     }
 
+    /* ===== EXPERIENCE ===== */
+    .exp-item {
+      border: 1px solid #330066;
+      background: #0a001a;
+      padding: 10px 12px;
+      margin-bottom: 10px;
+    }
+    .exp-role {
+      font-family: "Press Start 2P", monospace;
+      font-size: 10px;
+      color: #ffff00;
+      margin: 0 0 5px 0;
+    }
+    .exp-company {
+      color: #ff00ff;
+      font-weight: bold;
+      font-size: 13px;
+      margin: 0 0 3px 0;
+    }
+    .exp-dates {
+      color: #556688;
+      font-size: 11px;
+      margin: 0 0 8px 0;
+    }
+    .exp-desc {
+      color: #aaddff;
+      font-size: 13px;
+      margin: 0;
+      line-height: 1.6;
+    }
+
     /* ===== RESPONSIVE / MOBILE ===== */
     @media (max-width: 600px) {
       #wrapper {
@@ -381,9 +412,9 @@
   <div id="header">
     <h1>~~~ JUNAID'S HOMEPAGE ~~~</h1>
     <marquee scrollamount="4">
-      *** Welcome to my page! *** Game Developer *** Unity *** C# *** Making cool stuff since forever ***
+      *** Welcome to my page! *** Engineer @ Klarna *** Game Dev *** Unity *** Stanford Speaker *** Founder of Respawnwear *** Berlin ***
       &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      *** Welcome to my page! *** Game Developer *** Unity *** C# *** Making cool stuff since forever ***
+      *** Welcome to my page! *** Engineer @ Klarna *** Game Dev *** Unity *** Stanford Speaker *** Founder of Respawnwear *** Berlin ***
     </marquee>
     <div style="margin-top:6px; font-size:12px; color:#aaaaff;">
       <span class="blink">&#x2605;</span>
@@ -397,6 +428,7 @@
   <!-- NAVBAR -->
   <div id="navbar">
     <a href="#about">About Me</a>
+    <a href="#experience">Experience</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
@@ -407,19 +439,78 @@
     <h2 class="section-title">[ ABOUT ME ]</h2>
     <div class="section-content">
       <table class="about-table">
-        <tr><td>Name:</td><td>Junaid</td></tr>
-        <tr><td>Location:</td><td>Planet Earth</td></tr>
-        <tr><td>Occupation:</td><td>Game Developer &amp; Software Engineer</td></tr>
+        <tr><td>Name:</td><td>Junaid Ahmed</td></tr>
+        <tr><td>Location:</td><td>Berlin, Germany</td></tr>
+        <tr><td>Occupation:</td><td>Software Engineer &amp; Game Developer</td></tr>
         <tr><td>Interests:</td><td>Game Dev, Unity, C#, making things explode (in-game, obviously)</td></tr>
+        <tr><td>Education:</td><td>International Institute of Information Technology</td></tr>
         <tr><td>Currently:</td><td>Building a Vampire Survivors-style 2D clone in Unity</td></tr>
         <tr>
           <td colspan="2" style="padding-top:10px; color:#aaddff;">
-            Hey there! Welcome to my little corner of the internet. I'm a game developer who loves
-            building 2D games in Unity. This site is where I dump my latest experiments, builds,
-            and projects. Have a look around &mdash; and don't forget to play the game below!
+            Hey there! Welcome to my little corner of the internet. I'm a software engineer and game
+            developer based in Berlin. I work at Klarna by day and build 2D games in Unity by night.
+            I also founded Respawnwear &mdash; a gamer merch shop &mdash; and spoke at Stanford about
+            verifiable HTTPS protocols. This site is where I dump my latest experiments, builds, and
+            projects. Have a look around &mdash; and don't forget to play the game below!
           </td>
         </tr>
       </table>
+    </div>
+  </div>
+
+  <hr class="rainbow-hr">
+
+  <!-- EXPERIENCE -->
+  <div class="section" id="experience">
+    <h2 class="section-title">[ EXPERIENCE ]</h2>
+    <div class="section-content">
+
+      <div class="exp-item">
+        <p class="exp-role">&#x1F4BC; SOFTWARE ENGINEER</p>
+        <p class="exp-company">Klarna &mdash; Berlin, Germany</p>
+        <p class="exp-dates">Current position</p>
+        <p class="exp-desc">
+          Engineer at one of Europe's leading fintech companies. Consistently delivered results
+          and helped the team move forward through periods of uncertainty. Known for strong
+          communication, teamwork, and reliable execution.
+        </p>
+      </div>
+
+      <div class="exp-item">
+        <p class="exp-role">&#x1F3AE; UNITY DEVELOPER (CONTRACT)</p>
+        <p class="exp-company">Hospital Rehabilitation Project</p>
+        <p class="exp-dates">Project-based</p>
+        <p class="exp-desc">
+          Built a Unity-based game simulation to assist patients recovering from stroke and
+          physical trauma. The game encouraged gradual hand and leg movement in an immersive
+          environment, making physiotherapy more engaging.
+        </p>
+      </div>
+
+      <div class="exp-item">
+        <p class="exp-role">&#x1F399; TECHNICAL SPEAKER</p>
+        <p class="exp-company">Reclaim Protocol (YC W21) &mdash; Stanford University</p>
+        <p class="exp-dates">Guest speaker</p>
+        <p class="exp-desc">
+          Invited to present Reclaim Protocol's technical architecture at Stanford University.
+          Covered how HTTPS traffic can be made cryptographically verifiable &mdash; a zero-knowledge
+          approach to proving web activity without exposing private data.
+        </p>
+      </div>
+
+      <div class="exp-item">
+        <p class="exp-role">&#x1F455; FOUNDER</p>
+        <p class="exp-company">Respawnwear.com &mdash; Gamer Merch E-shop</p>
+        <p class="exp-dates">~24 months</p>
+        <p class="exp-desc">
+          Founded and operated an e-commerce store specialising in geek and gamer merchandise.
+          Grew to $27,000+ in sales across 800+ unique customers in multiple countries.
+          Handled logo design, Google PLA ad campaigns, social media marketing (Instagram,
+          Facebook, Reddit), customer support, and was among the first shops to accept
+          cryptocurrency payments (BTC &amp; LTC).
+        </p>
+      </div>
+
     </div>
   </div>
 
@@ -465,6 +556,21 @@
           <td class="cat-col">Game Dev</td>
           <td><span class="skill-bar-bg"><span class="skill-bar-fill" style="width:72%"></span></span></td>
         </tr>
+        <tr>
+          <td>Digital Marketing</td>
+          <td class="cat-col">Business</td>
+          <td><span class="skill-bar-bg"><span class="skill-bar-fill" style="width:70%"></span></span></td>
+        </tr>
+        <tr>
+          <td>Public Speaking</td>
+          <td class="cat-col">Soft Skills</td>
+          <td><span class="skill-bar-bg"><span class="skill-bar-fill" style="width:68%"></span></span></td>
+        </tr>
+        <tr>
+          <td>E-commerce / DTC</td>
+          <td class="cat-col">Business</td>
+          <td><span class="skill-bar-bg"><span class="skill-bar-fill" style="width:65%"></span></span></td>
+        </tr>
       </table>
     </div>
   </div>
@@ -488,6 +594,30 @@
         <a class="play-btn" href="game.html">&#x25BA; PLAY NOW</a>
         &nbsp;
         <span style="font-size:11px; color:#778899;">(opens in browser, no download needed)</span>
+      </div>
+
+      <div class="project-box">
+        <p class="project-title">&#x1F455; RESPAWNWEAR.COM</p>
+        <p class="project-desc">
+          Gamer and geek merchandise e-shop I founded and ran solo. Grew to $27k+ in sales,
+          800+ customers across multiple countries. One of the first shops to accept crypto
+          payments (BTC &amp; LTC). Handled everything: design, ads, support, social media.
+        </p>
+        <p style="font-size:12px; color:#8899aa; margin-bottom:10px;">
+          Stack: E-commerce &bull; Google PLAs &bull; Instagram/Reddit marketing &bull; BTC/LTC payments
+        </p>
+      </div>
+
+      <div class="project-box">
+        <p class="project-title">&#x1F3C5; REHAB GAME (UNITY)</p>
+        <p class="project-desc">
+          A Unity game built for a hospital to help stroke and physical trauma patients with
+          rehabilitation. Players perform gradual hand and leg movements to control the game,
+          turning physiotherapy sessions into something actually fun.
+        </p>
+        <p style="font-size:12px; color:#8899aa; margin-bottom:10px;">
+          Tech: Unity &bull; C# &bull; Motion input &bull; Healthcare UX
+        </p>
       </div>
 
       <div class="under-construction">
