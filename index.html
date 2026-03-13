@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Junaid's Homepage - Welcome!!!</title>
   <style>
     /* ===== RETRO EARLY 2000s STYLESHEET ===== */
@@ -295,6 +296,82 @@
       color: #aaa;
       background: #222;
     }
+
+    /* ===== RESPONSIVE / MOBILE ===== */
+    @media (max-width: 600px) {
+      #wrapper {
+        padding: 6px;
+        border-left: 2px solid #ff00ff;
+        border-right: 2px solid #ff00ff;
+        box-sizing: border-box;
+        width: 100%;
+      }
+
+      #header h1 {
+        font-size: 11px;
+        letter-spacing: 1px;
+      }
+
+      marquee { font-size: 12px; }
+
+      #navbar {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 6px;
+        padding: 8px 4px;
+      }
+      #navbar a {
+        margin: 0;
+        font-size: 12px;
+        padding: 4px 8px;
+      }
+
+      .section-title {
+        font-size: 10px;
+        padding: 6px 8px;
+      }
+
+      .section-content {
+        padding: 10px 10px;
+        font-size: 13px;
+      }
+
+      /* About: let label column shrink and wrap */
+      .about-table td:first-child {
+        width: auto;
+        white-space: normal;
+        min-width: 80px;
+      }
+
+      /* Skills: hide Category column, make bar fill cell width */
+      .skills-table .cat-col { display: none; }
+      .skill-bar-bg {
+        width: 100%;
+        box-sizing: border-box;
+      }
+
+      /* Projects: stack the play button full-width */
+      .play-btn {
+        display: block;
+        text-align: center;
+        box-sizing: border-box;
+        width: 100%;
+      }
+      .play-btn + span { display: block; margin-top: 6px; }
+
+      /* Contact: let label column shrink */
+      .contact-table td:first-child { width: auto; }
+
+      /* Footer badges: stack them */
+      .badge {
+        display: block;
+        margin: 3px auto;
+        text-align: center;
+      }
+
+      #visitor-count { font-size: 15px; letter-spacing: 2px; }
+    }
   </style>
 </head>
 <body>
@@ -355,37 +432,37 @@
       <table class="skills-table">
         <tr>
           <th>Skill</th>
-          <th>Category</th>
+          <th class="cat-col">Category</th>
           <th>Level</th>
         </tr>
         <tr>
           <td>Unity</td>
-          <td>Game Engine</td>
+          <td class="cat-col">Game Engine</td>
           <td><span class="skill-bar-bg"><span class="skill-bar-fill" style="width:85%"></span></span></td>
         </tr>
         <tr>
           <td>C#</td>
-          <td>Programming</td>
+          <td class="cat-col">Programming</td>
           <td><span class="skill-bar-bg"><span class="skill-bar-fill" style="width:80%"></span></span></td>
         </tr>
         <tr>
           <td>2D Game Design</td>
-          <td>Game Dev</td>
+          <td class="cat-col">Game Dev</td>
           <td><span class="skill-bar-bg"><span class="skill-bar-fill" style="width:75%"></span></span></td>
         </tr>
         <tr>
           <td>WebGL / HTML5</td>
-          <td>Web</td>
+          <td class="cat-col">Web</td>
           <td><span class="skill-bar-bg"><span class="skill-bar-fill" style="width:65%"></span></span></td>
         </tr>
         <tr>
           <td>Git / GitHub</td>
-          <td>Tools</td>
+          <td class="cat-col">Tools</td>
           <td><span class="skill-bar-bg"><span class="skill-bar-fill" style="width:70%"></span></span></td>
         </tr>
         <tr>
           <td>Game Physics</td>
-          <td>Game Dev</td>
+          <td class="cat-col">Game Dev</td>
           <td><span class="skill-bar-bg"><span class="skill-bar-fill" style="width:72%"></span></span></td>
         </tr>
       </table>
